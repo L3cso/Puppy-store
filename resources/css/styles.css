@@ -1,0 +1,113 @@
+/* global rules */
+
+html, body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 5vh;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Header */
+
+.logo {
+    width: auto;
+    height: 4rem;
+}
+
+nav { 
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    border-bottom: 2px solid black;
+
+}
+
+ul {
+    display: inline-flex;
+}
+
+li {
+    margin-inline: 1vw;
+}
+
+/* main */
+
+main, footer {
+    position: relative;
+    top: 4rem;
+}
+
+/* BANNER */
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    background-image: url("../images/puppy_group.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 50vh;
+    color: black;
+}
+
+#banner h1, #banner a {
+    background-color: hsla(360, 100%, 100%, 0.3);
+}
+
+#banner a {
+    color: red;
+}
+
+/* SERVICES */
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* trying to put the h3 and p next to the image */
+
+#services .card {
+    max-width: 33%;
+    padding: 1rem;  
+    display: flex;
+}
+
+/* .card p, .card h3, .card img {
+    display: inline;
+    float: right;
+} */
