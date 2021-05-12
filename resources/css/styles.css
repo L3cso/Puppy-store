@@ -31,10 +31,13 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1rem;
+}
+
 img {
     width: 100%;
     height: auto;
-    /* margin: 0 auto; */
 }
 
 .container {
@@ -46,6 +49,7 @@ img {
 .card {
     border: 1px solid black;
     flex-basis: 100%;
+    padding: 1rem;
 }
 
 
@@ -110,26 +114,28 @@ main, footer {
 /* SERVICES */
 
 
-
-#services .card {
-    padding: 1rem;  
-    /* justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-wrap: wrap; */
+#services img {
+    padding-bottom: 0;
 }
 
+@media only screen and (min-width: 480px) {
+    #services .container {
+        flex-direction: row;
+        }
+}
 
+}
 
 /* TEAM */
 
 
-#team .card {
-    /* margin: 1vw;
-    flex-basis: 31%;
-    min-width: 250px;*/
-}
-
 #team img {
     max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 480px) {
+    #team {
+        flex-direction: row;
+    }
 }
